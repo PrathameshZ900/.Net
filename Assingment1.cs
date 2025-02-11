@@ -38,3 +38,75 @@ else
     Console.WriteLine("C is largest");
 
 
+// Q3. find and correct this code.
+
+// int num = 2;
+// switch (num + 1) {
+// case 1: Console.Write("One");
+// break;
+// case 2: Console.Write("Two");
+// break;
+// case 3: Console.Write("Three");
+// case 4: Console.Write("Four");
+// break;
+// default: Console.Write("Default");
+// }
+
+// Ans: it will return an error due to 3 and default case there is not break for this case:
+
+int num = 2;
+    switch (num + 1)  // num + 1 = 3
+    {
+        case 1: 
+            Console.Write("One");
+            break;
+        case 2: 
+            Console.Write("Two");
+            break;
+        case 3: 
+            Console.Write("Three");
+            break;  // Added break to prevent fall-through
+        case 4: 
+            Console.Write("Four");
+            break;
+        default: 
+            Console.Write("Default");
+            break;
+    }
+
+// Q4. Guess the output of the following code.
+
+int x = 0;
+if (x)
+  Console.WriteLine("Hello");
+else
+  Console.WriteLine("World");
+
+
+// Ans: out put is "World" 
+
+
+// Q5. Guess the output of the following code.
+
+bool isTrue = false;
+if (isTrue == true)
+  Console.WriteLine("Yes");
+else
+  Console.WriteLine("No");
+
+// Ans: out put is error because the camprasion == use this  and after update the output is "No".
+
+
+// Q6. Guess the output of the following code.
+
+
+int x = 5, y = 10;
+if (x > 0)
+if (y < 10)
+Console.WriteLine("A");
+else
+Console.WriteLine("B");
+else
+Console.WriteLine("C");
+
+
