@@ -262,3 +262,127 @@ i += 2;
 
 // Ans: "1 3 5 7 9";
 
+// Q21. find out the out put.
+
+int sum = 0;
+for (int i = 1; i <= 5; i++)
+{
+sum += i;
+}
+Console.Write(sum);
+
+// Ans: 15;
+
+// Q22. find out the out put.
+
+int fact = 1;
+for (int i = 1; i <= 4; i++)
+{
+fact *= i;
+}
+Console.Write(fact);
+
+
+// Ans: 24;
+
+
+// Q23. find out the out put.
+
+int num = 1234, count = 0;
+while (num > 0)
+{
+count++;
+num /= 10;
+}
+Console.Write(count);
+
+
+// Ans: 4;
+
+// Q24. find out the out put.
+
+int num = 123, rev = 0;
+while (num > 0)
+{
+rev = rev * 10 + num % 10;
+num /= 10;
+}
+Console.Write(rev);
+
+
+// Ans: 6; 
+
+// Q25. find out the out put.
+
+for (int i = 1; i <= 5; i++)
+{
+Console.Write(3 * i + " ");
+}
+
+
+// Ans: "3 6 9 12 15";
+
+// Q26. find out the out put. 
+
+int a = 0, b = 1, c;
+Console.Write(a + " " + b + " ");
+for (int i = 2; i < 5; i++)
+{
+c = a + b;
+Console.Write(c + " ");
+a = b;
+b = c;
+}
+
+
+// Ans: "0 1 1 2 3";
+
+// Q27. find out the out put.
+
+for (int i = 1; i <= 5; i++)
+{
+if (i % 2 == 0) continue;
+Console.Write(i + " ");
+}
+
+// Ans: "1 3 5";
+
+// Q28. find out the out put.
+
+int i = 1;
+while (i <= 3)
+Console.Write(i++ + " ");
+
+// Ans: "1 2 3";
+
+// Q29. find out the out put.
+
+int num = 123, sum = 0;
+while (num > 0)
+{
+sum += num % 10;
+num /= 10;
+}
+Console.Write(sum);
+
+
+// Ans: 6;
+
+
+// Q30. find out the out put.
+
+int num = 7, flag = 1;
+for (int i = 2; i < num; i++)
+{
+if (num % i == 0)
+{
+flag = 0;
+break;
+}
+}
+Console.Write(flag == 1 ? "Prime" : "Not Prime");
+
+
+// Ans: "Prime";
+
+
