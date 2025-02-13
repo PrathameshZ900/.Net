@@ -4,21 +4,20 @@
 // Example Input: [1, 2, 4, 5, 6], n = 6
 // Output: 3
 
-public class MissingNumberFinder {
-    public static int FindMissNumber(int[] arr, int n) {
-        int expectedSum = n * (n + 1) / 2; // Sum of first n natural numbers
-        int actualSum = 0;
-        
-        for (int num : arr) {
-            actualSum += num;
-        }
-        
-        return expectedSum - actualSum; // The missing number
+using System;
+
+int[] arr = {1, 2, 3, 4, 5, 7};
+int n = 7;
+
+int FindNumber(int[] arr, int n) {
+    int sumN = n * (n + 1) / 2; // Corrected sum formula
+    int sumA = 0;
+
+    foreach (int num in arr) {
+        sumA += num;
     }
 
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 4, 5, 6};
-        int n = 6;
-        System.out.println("Missing number: " + FindMissNumber(arr, n)); // Output: 3
-    }
+    return sumN - sumA;
 }
+
+Console.WriteLine("Missing Number: " + FindNumber(arr, n));
