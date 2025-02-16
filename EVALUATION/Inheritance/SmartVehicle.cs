@@ -1,0 +1,2 @@
+// Develop a "SmartVehicle" inheritance hierarchy where a "Vehicle" class has electric and gas-powered subclasses,
+//  and further derived classes like "SelfDrivingCar" and "HybridCar". Implement an overridden Drive() method in each.

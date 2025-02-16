@@ -1,0 +1,1 @@
+// Implement a "DatabaseConnector" base class with different derived classes for SQL, MongoDB, and Firebase that override a Connect() method.
