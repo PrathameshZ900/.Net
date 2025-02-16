@@ -1,3 +1,6 @@
+// Design a "SmartHomeSystem" class that contains a list of connected devices. Implement methods to add a device, remove a device, 
+// and turn on/off all devices dynamically.
+
 using System;
 using System.Collections.Generic;
 
